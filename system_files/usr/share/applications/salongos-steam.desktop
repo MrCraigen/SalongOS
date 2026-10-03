@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Steam Gaming Mode
-Comment=Switch to Steam Gaming Mode
-Exec=steamosctl switch-to-game-mode
-Icon=steam
-Categories=Game;
-Terminal=false

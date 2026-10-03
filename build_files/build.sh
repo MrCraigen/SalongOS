@@ -17,6 +17,10 @@ dnf5 install -y tmux
 dnf5 install -y plasma-bigscreen
 dnf5 install -y plasma-bigscreen-wayland
 
+# SalongOS tweaks
+# The "Steam" icon in Bigscreen switches to Steam Gaming Mode
+sed -i 's|^Exec=/usr/bin/bazzite-steam %U$|Exec=steamosctl switch-to-game-mode|' /usr/share/applications/steam.desktop
+# Remove the OpenGamepadUI launcher (Bigscreen ignores NoDisplay/Hidden)
 rm -f /usr/share/applications/opengamepadui.desktop
 
 # Use a COPR Example:
