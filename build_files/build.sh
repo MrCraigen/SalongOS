@@ -17,6 +17,8 @@ dnf5 install -y tmux
 dnf5 install -y plasma-bigscreen
 dnf5 install -y plasma-bigscreen-wayland
 
+rm -f /usr/share/applications/opengamepadui.desktop
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
